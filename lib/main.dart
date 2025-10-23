@@ -13,11 +13,13 @@ class BelanjaApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Belanja App',
+      // route awal (halaman pertama)
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
         '/item': (context) => const ItemPage(),
       },
+      debugShowCheckedModeBanner: false,
     );
   }
 }
